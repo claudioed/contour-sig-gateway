@@ -1,0 +1,18 @@
+kind: HTTPRoute
+apiVersion: networking.x-k8s.io/v1alpha1
+metadata:
+  name: kuard
+  namespace: projectcontour
+  labels:
+    app: kuard
+spec:
+  hostnames:
+    - "sig.gateway.io"
+  rules:
+    - matches:
+        - path:
+            type: Prefix
+            value: /
+      forwardTo:
+        - serviceName: kuard
+          port: 80
