@@ -5,3 +5,5 @@ This repo is part of my blog post, that I've tried to talk a little about [Gaewa
 
 
 ### Blog Post
+
+http://claudioed.tech/2021/05/15/my-first-impressions-about-gateway-apis-k8s/
